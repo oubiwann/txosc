@@ -3,9 +3,7 @@
 txosc installation script
 """
 from setuptools import setup
-import os
 import sys
-import subprocess
 import txosc
 
 
@@ -38,6 +36,8 @@ This library implements OSC version 1.1 over both UDP and TCP for the Twisted Py
     )
 
 if sys.argv[1] == "build":
+    import os
+    import subprocess
     from twisted.python import procutils
     commands = [
         'help2man --no-info --include=man-osc-send.txt --no-discard-stderr --name="sends an OSC message" ./scripts/osc-send --output=osc-send.1',
