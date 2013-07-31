@@ -624,6 +624,7 @@ _tags = {
     "i": IntArgument,
     "s": StringArgument,
     "t": TimeTagArgument,
+    "d": FloatArgument,
     }
 
 
