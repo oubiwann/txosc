@@ -1,0 +1,79 @@
+*Forked from: https://bitbucket.org/arjan/txosc/src*
+
+.. code:: text
+  _
+ | |___  _____  ___  ___
+ | __\ \/ / _ \/ __|/ __|
+ | |_ >  < (_) \__ \ (__
+  \__/_/\_\___/|___/\___|
+
+
+txosc : Open Sound Control (OSC) protocol for Twisted
+=====================================================
+
+Open Sound Control (OSC) is an open, transport-independent,
+message-based protocol developed for communication among computers,
+sound synthesizers, and other multimedia devices.
+
+This library implements OSC version 1.1 over both UDP and TCP for
+the Twisted Python framework.
+
+Twisted is an event-based framework for internet applications
+which works on Python 2.3 through 2.6.
+
+Note that this library does not support messages without OSC type tags.
+This library also implement a synchronous sender that doesn't require the
+whole Twisted framework. It should be easy to create OSC receivers with any
+Python network tools from this library.
+
+
+Installing
+==========
+
+Instructions for installing this software are in INSTALL.
+
+
+Unit Tests
+==========
+
+See our unit tests run proving that the software is bug free::
+
+   $ trial txosc
+
+
+Project Informations
+====================
+
+URL: http://bitbucket.org/arjan/txosc
+Mailing list: https://listes.koumbit.net/cgi-bin/mailman/listinfo/txosc-toonloop.com
+See also: http://opensoundcontrol.org/implementation/python-txosc
+
+
+Examples
+========
+
+The examples starting with the "async_" prefix use Twisted.
+The examples starting with the "sync_" prefix don't use it.
+
+
+Requirements
+============
+
+* Twisted 8.1.0 or later
+
+* help2man for building the man pages of osc-send and osc-receive
+
+
+Authors
+=======
+
+Arjan Scherpenisse <arjan@scherpenisse.net>
+Alexandre Quessy <alexandre@quessy.net>
+
+
+History
+=======
+
+2009 - Written by Arjan Scherpenisse and Alexandre Quessy
+2010 - Stable release 0.2
+
