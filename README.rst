@@ -1,6 +1,6 @@
 *Forked from: https://bitbucket.org/arjan/txosc/src*
 
-::
+.. code::
     _
    | |___  _____  ___  ___
    | __\ \/ / _ \/ __|/ __|
@@ -45,15 +45,18 @@ See our unit tests run proving that the software is bug free::
 Project Informations
 --------------------
 
-URL: http://bitbucket.org/arjan/txosc
-Mailing list: https://listes.koumbit.net/cgi-bin/mailman/listinfo/txosc-toonloop.com
-See also: http://opensoundcontrol.org/implementation/python-txosc
+ * URL: http://bitbucket.org/arjan/txosc
+
+ * Mailing list: https://listes.koumbit.net/cgi-bin/mailman/listinfo/txosc-toonloop.com
+
+ * See also: http://opensoundcontrol.org/implementation/python-txosc
 
 
 Examples
 --------
 
 The examples starting with the "async_" prefix use Twisted.
+
 The examples starting with the "sync_" prefix don't use it.
 
 
