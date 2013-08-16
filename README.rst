@@ -9,9 +9,9 @@
     \__/_/\_\___/|___/\___|
 
 
-=====================================================
-txosc : Open Sound Control (OSC) protocol for Twisted
-=====================================================
+=================================================
+The Open Sound Control (OSC) protocol for Twisted
+=================================================
 
 Open Sound Control (OSC) is an open, transport-independent,
 message-based protocol developed for communication among computers,
