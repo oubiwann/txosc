@@ -9,19 +9,19 @@
     \__/_/\_\___/|___/\___|
 
 
-=================================================
-The Open Sound Control (OSC) protocol for Twisted
-=================================================
+===================================
+Twisted Open Sound Control Protocol
+===================================
 
 Open Sound Control (OSC) is an open, transport-independent,
 message-based protocol developed for communication among computers,
 sound synthesizers, and other multimedia devices.
 
 This library implements OSC version 1.1 over both UDP and TCP for
-the Twisted Python framework.
+the Twisted (Python) framework.
 
 Twisted is an event-based framework for internet applications
-which works on Python 2.3 through 2.6.
+which works on Python 2.4 through 2.7.
 
 Note that this library does not support messages without OSC type tags.
 This library also implement a synchronous sender that doesn't require the
