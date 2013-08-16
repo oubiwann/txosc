@@ -1,6 +1,6 @@
 *Forked from: https://bitbucket.org/arjan/txosc/src*
 
-::
+.. code:: bash
     _
    | |___  _____  ___  ___
    | __\ \/ / _ \/ __|/ __|
