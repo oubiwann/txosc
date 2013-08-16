@@ -1,6 +1,6 @@
 *Forked from: https://bitbucket.org/arjan/txosc/src*
 
-.. code:: text
+::
   _
  | |___  _____  ___  ___
  | __\ \/ / _ \/ __|/ __|
@@ -8,6 +8,7 @@
   \__/_/\_\___/|___/\___|
 
 
+=====================================================
 txosc : Open Sound Control (OSC) protocol for Twisted
 =====================================================
 
@@ -28,13 +29,13 @@ Python network tools from this library.
 
 
 Installing
-==========
+----------
 
 Instructions for installing this software are in INSTALL.
 
 
 Unit Tests
-==========
+----------
 
 See our unit tests run proving that the software is bug free::
 
@@ -42,7 +43,7 @@ See our unit tests run proving that the software is bug free::
 
 
 Project Informations
-====================
+--------------------
 
 URL: http://bitbucket.org/arjan/txosc
 Mailing list: https://listes.koumbit.net/cgi-bin/mailman/listinfo/txosc-toonloop.com
@@ -50,14 +51,14 @@ See also: http://opensoundcontrol.org/implementation/python-txosc
 
 
 Examples
-========
+--------
 
 The examples starting with the "async_" prefix use Twisted.
 The examples starting with the "sync_" prefix don't use it.
 
 
 Requirements
-============
+------------
 
 * Twisted 8.1.0 or later
 
@@ -65,14 +66,14 @@ Requirements
 
 
 Authors
-=======
+-------
 
 Arjan Scherpenisse <arjan@scherpenisse.net>
 Alexandre Quessy <alexandre@quessy.net>
 
 
 History
-=======
+-------
 
 2009 - Written by Arjan Scherpenisse and Alexandre Quessy
 2010 - Stable release 0.2
