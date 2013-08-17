@@ -6,9 +6,9 @@
 """
 Synchronous blocking OSC sender without Twisted.
 
-Twisted is not used in this file. You don't even need to repy on Twisted to use 
+Twisted is not used in this file. You don't even need to repy on Twisted to use
 it and the txosc.osc module. That is enough to send OSC messages in a simple
-script. 
+script.
 """
 import socket
 import struct
@@ -31,10 +31,9 @@ class _Sender(object):
         @param binary_data: Binary blob of an element to send.
         """
         raise NotImplementedError("This method must be overriden in child classes.")
-    
+
     def close(self):
         raise NotImplementedError("This method must be overriden in child classes.")
-    
 
 
 class TcpSender(_Sender):
@@ -65,7 +64,7 @@ class UdpSender(_Sender):
 
     Mode can be either UDP_MODE_BROADCAST or UDP_MODE_MULTICAST or None.
     If using UDP_MODE_MULTICAST, you must set the multicast_group.
-    
+
     FIXME: Right now, the data it sends is badly formatted.
     """
     def __init__(self, address, port, mode=None, multicast_group=None):
@@ -96,8 +95,8 @@ class UdpSender(_Sender):
                 raise RuntimeError("Not using the multicast mode.")
 
     def _actually_send(self, binary_data):
-        # For UDP, we just send the data. 
-        # No need to pack it with its size. 
+        # For UDP, we just send the data.
+        # No need to pack it with its size.
         if self.mode == UDP_MODE_BROADCAST:
             self._socket.sendto(binary_data, ('<broadcast>', self.port))
         elif self.mode == UDP_MODE_MULTICAST:

@@ -67,10 +67,11 @@ class StreamBasedProtocol(protocol.Protocol):
         Send an OSC element over the TCP wire.
         @param element: L{txosc.osc.Message} or L{txosc.osc.Bundle}
         """
+        d = defer.Deferred()
         binary = element.toBinary()
         self.transport.write(struct.pack(">i", len(binary)) + binary)
         #TODO: return a Deferred
-
+        return d
 
 
 class StreamBasedFactory(object):
@@ -92,7 +93,9 @@ class StreamBasedFactory(object):
 
 
     def send(self, element):
+        d = defer.Deferred()
         self.connectedProtocol.send(element)
+        return d
 
 
     def gotElement(self, element):
